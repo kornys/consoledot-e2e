@@ -10,6 +10,7 @@ class KafkaClient {
   username: string;
   password: string;
   kafka: Kafka;
+  retry: 10
 
   constructor(bootstrapServer: string, username: string, password: string, mechanism: string = Mechanism.plain) {
     this.bootstrapServer = bootstrapServer;
